@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------- BODY ---------------- */
+body {
+  background-image: url("images/mr-dibo-XnB2vyAqhzg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: #d7b899;
+  color: #3e2723;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 3rem;
+  box-shadow: #3e2723 0px 4px 6px -1px, #3e2723 0px 2px 4px -1px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #3e2723;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #3e2723;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f9d89c;
+  font-weight: bold;
+  border-bottom: 2px solid #f9d89c;
+  padding-bottom: 2px;
+  transform: scale(1.15);
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+  height: 88vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 2rem;
+}
+
+.hero-sect {
+  margin-left: 3rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Montserrat';
+}
+
+.hero p {
+  color: #3e2723;
+  margin-bottom: 2rem;
+}
+
+.btn,
+.butn {
+  margin-right: 2rem;
+  width: 10rem;
+  border: none;
+  border-radius: 20px;
+  padding: 14px 34px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 25px rgb(204, 164, 109);
+  transition: 0.4s ease;
+}
+
+.btn {
+  background: linear-gradient(135deg, #6b4713, #3e2723);
+  color: #fff;
+}
+
+.butn {
+  background: linear-gradient(135deg, #ffffff, #f9d89c);
+  color: rgb(129, 92, 41);
+}
+
+.btn:hover,
+.butn:hover {
+  transform: scale(1.1);
+}
+
+/* ---------------- FEATURES ---------------- */
+.top {
+  background-color: #f0c98e;
+  color: black;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.coffee-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.coffee-one {
+  max-width: 250px;
+}
+
+.coffee-all i {
+  font-size: 3rem;
+  color: #3e2723;
+  margin-bottom: 1rem;
+}
+
+/* ---------------- WHY CHOOSE US ---------------- */
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.part-one {
+  flex: 1;
+  min-width: 300px;
+  background-color: rgb(32, 20, 3);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.half1 {
+  margin: 2rem;
+  color: white;
+}
+
+.half2 {
+  flex: 1;
+  background-image: url(images/pablo-merchan-montes-_Tw4vCs9C-8-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+}
+
+.part-one h1 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.part-one p {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn2 {
+  background: #ffffff;
+  color: #3e2723;
+  padding: 14px 36px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff9100;
+}
+
+/* ---------------- PART TWO ---------------- */
+.part-two {
+  flex: 1;
+  background-color: rgb(204, 164, 109);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.part-two p{
+  margin-bottom: 20px;
+}
+.part-two h1,
+.part-two h2,
+.part-two p {
+  color: black;
+}
+
+.part-two h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.btn3 {
+  background: #3e2723;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 36px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn3:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff9100;
+}
+
+/* ---------------- KERO SECTION ---------------- */
+.kero {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f3ddbc;
+  color: black;
+}
+
+.kero-left {
+  width: 10rem;
+  flex: 1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65vh;
+}
+
+.cream {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.kero-text p{
+  font-size: 15px;
+  font-weight: 20;
+  margin-bottom: 1rem;
+}
+.kero-left i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.hero-left p{
+  font-weight: 50;
+  font-size: 200px;
+}
+.kero-buttons .button2{
+  background: hsl(39, 84%, 18%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.button1 {
+  background: hsl(38, 100%, 90%);
+  color: black;
+  border: rgb(155, 145, 127) 2px solid;
+  border-radius: 25px;
+  padding: 12px 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.kero-buttons button:hover {
+  background: #3e2723;
+  color: #f9d89c;
+  border: 1px solid #f9d89c;
+}
+
+.kero-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 400rem;
+  min-width: 900px;
+  background-color: #f3ddbc;
+  background-size: cover;
+  background-position: center;
+}
+.kero-cup-text{
+  margin-top: 5rem;
+}
+.kero-cup img{
+  margin-left: 2rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.kero-cups{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-right: 5rem;
+}
+.kero-cup{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .navbar {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 25px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .coffee-all {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parts {
+    flex-direction: column;
+  }
+
+  .part-one,
+  .part-two {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .kero {
+    flex-direction: column;
+  }
+
+  .kero-left {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn,
+  .butn,
+  .btn2,
+  .btn3 {
+    padding: 10px 24px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+}
+
