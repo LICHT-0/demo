@@ -28,7 +28,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  margin-bottom: 3rem;
   box-shadow: #3e2723 0px 4px 6px -1px, #3e2723 0px 2px 4px -1px;
 }
 
@@ -62,15 +61,37 @@ body {
 
 /* ---------------- HERO SECTION ---------------- */
 .hero {
+  position: relative;
   height: 88vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 2rem;
+  background: url(images/your-hero-image.jpg) center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
 }
 
+/* Dark gradient overlay */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+  z-index: 1;
+}
+
+/* Content */
 .hero-sect {
+  position: relative;
+  z-index: 2;
   margin-left: 3rem;
+  margin-top: 5rem;
 }
 
 .hero h1 {
@@ -80,10 +101,11 @@ body {
 }
 
 .hero p {
-  color: #3e2723;
+  color: #f9d89c;
   margin-bottom: 2rem;
 }
 
+/* Buttons */
 .btn,
 .butn {
   margin-right: 2rem;
@@ -111,6 +133,7 @@ body {
 .butn:hover {
   transform: scale(1.1);
 }
+
 
 /* ---------------- FEATURES ---------------- */
 .top {
@@ -243,6 +266,7 @@ body {
 }
 
 .kero-left {
+  margin-left: 1rem;
   width: 10rem;
   flex: 1;
   padding-top: 3rem;
@@ -316,24 +340,327 @@ body {
   margin-top: 5rem;
 }
 .kero-cup img{
-  margin-left: 2rem;
+  margin-left: 1rem;
   width: 8rem;
   height: 8rem;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
 .kero-cups{
+  justify-content: flex-start;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   gap: 4rem;
-  margin-right: 5rem;
 }
 .kero-cup{
   display: flex;
   flex-direction: column;
 }
+.kero-cup-text h1 {
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  color: #6b4e2e;
+}
 
 
+
+
+/* ---------------- SMALL ---------------- */
+.small {
+  position: relative;
+  background-image: url(images/ham-kris-DcQnRJ1SHHw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Overlay gradient */
+.small .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+  z-index: 1;
+}
+
+.smalltext {
+  position: relative;
+  z-index: 2;
+  padding: 5rem;
+}
+
+.small h1 {
+  font-family: 'Dancing Script';
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.small p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #f9d89c;
+}
+
+
+/* Coffee Button */
+.coffee-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: transparent;
+  border: 3px solid #6b4e2e;
+  color: #6b4e2e;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.coffee-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #6b4e2e;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.coffee-btn:hover::before {
+  width: 100%;
+}
+
+.coffee-btn:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ---------------- FEET ---------------- */
+.feet {
+  color: black;
+  background-color: #f9d89c;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* responsive layout */
+  gap: 2rem;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  transition: 0.3s;
+}
+.foot:hover{
+  transform: scale(1.09);
+}
+
+.foot img {
+  border-radius: 50px;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.cust {
+  display: flex;
+  flex-direction: column;
+}
+
+.cust h2 {
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  margin-bottom: 0.3rem;
+}
+
+.cust p {
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3e2723;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.foottext {
+  padding-right: 25rem;
+  text-align: center;
+}
+
+footer h1 {
+  font-family: 'Dancing Script';
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icons a {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #d4a373;
+  transform: scale(1.2);
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Creamy white button */
+.btn-creamy {
+  background-color: #f5f1e8;
+  color: #3e2723;
+}
+
+.btn-creamy:hover {
+  background-color: #ede3d0;
+  transform: translateY(-3px);
+}
+
+/* Coffee brown-orange button */
+.btn-coffee {
+  background-color: #b86b42;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-coffee:hover {
+  background-color: #a95c36;
+  transform: translateY(-3px);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .smalltext {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .small h1 {
+    font-size: 2rem;
+  }
+
+  .small p {
+    font-size: 1.2rem;
+  }
+
+  .feet {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .small {
+    height: auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .smalltext {
+    padding: 0;
+  }
+
+  .small h1 {
+    font-size: 1.8rem;
+  }
+
+  .small p {
+    font-size: 1rem;
+  }
+
+  .foot {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .foot img {
+    margin-bottom: 0.5rem;
+  }
+
+  .foottext {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-icons {
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .button-group {
+    margin-top: 1rem;
+  }
+}
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 992px) {
